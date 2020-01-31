@@ -1,9 +1,10 @@
 const twilio = require('twilio');
 
 const sendSms = async (req, res, next) => {
-  const { to, from, text } = req.body;
+  const { to, text } = req.body;
   const accountSid = process.env.ACCOUNT_SID;
   const authToken = process.env.AUTH_TOKEN;
+  const from = `+${process.env.FROM}`;
   const client = twilio(accountSid, authToken);
 
   try {
