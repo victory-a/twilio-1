@@ -1,5 +1,5 @@
 {
-  "name": "twilio",
+  "name": "twilio-practice",
   "version": "1.0.0",
   "description": "twilio api practice",
   "main": "server.js",
@@ -20,7 +20,8 @@
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "twilio": "^3.39.3"
   },
   "devDependencies": {
     "eslint": "^6.1.0",
