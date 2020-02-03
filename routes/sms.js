@@ -1,6 +1,7 @@
 const router = require('express').Router();
-const { sms, multimedia, defaultReply } = require('../controllers/sms');
+const { sms, whatsapp } = require('../controllers/messages');
 
 router.post('/sms', sms);
+router.post('/whatsapp', whatsapp);
 
 module.exports = router;
