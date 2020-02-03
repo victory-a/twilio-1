@@ -73,3 +73,21 @@ exports.whatsapp = async (req, res, next) => {
     res.status(400).json({ success: false, message: error });
   }
 };
+
+// exports.whatsappReply = async (req, res, next) => {
+//   const twiml = new MessagingResponse();
+//   let message;
+//   if (req.body.Body.toLowerCase().includes('hello')) {
+//     message = 'Hi!';
+//   } else if (req.body.Body.toLowerCase().includes('bye')) {
+//     message = 'Goodbye';
+//   } else {
+//     message = 'default response.';
+//   }
+//   console.log(req.body);
+
+//   twiml.message(message);
+
+//   res.writeHead(200, { 'Content-Type': 'text/xml' });
+//   res.end(twiml.toString());
+// };

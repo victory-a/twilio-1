@@ -17,7 +17,7 @@ app.use(morgan('dev'));
 
 app.use(session({ secret: process.env.SESSION_SECRET }));
 
-app.use('/api/v1/message', smsRouter);
+app.use('/api/v1/sms', smsRouter);
 
 // error handler
 app.use(require(`./utils/errorHandler`));
